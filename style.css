@@ -1,0 +1,137 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  width: 100vw;
+  height: 80vh;
+  
+}
+.navbar{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 10vh;
+  width: 100vw;
+  padding-top: 40px;
+/* border: 2px solid black;*/
+  
+  
+}
+.logo{
+  padding-top: 30px;
+  padding-left: 40px;
+  font-size: 14px;
+  
+}
+.navbar ul{
+  display: flex;
+  align-items: center;
+  padding-right: 40px;
+  gap: 70px;
+  
+}
+.navbar li{
+  list-style: none;
+  cursor: pointer;
+  
+}
+.content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 40px;
+  height: 70vh;
+  width: 100vw;
+  /*border: 2px solid red;*/
+}
+/*left-content*.avtar*/
+.left-content{
+   position: relative;
+  width: 50vw;
+  height: 70vh;
+  /*border: 2px solid #806a00;*/
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  font-size: 30px;
+  left: 40px;
+  
+}
+.active{
+  background-color:#d32d03 ;
+  color: white;
+  padding: 20px 30px;
+outline: none;
+  border: none;
+  border-radius: 30px;
+  
+}
+.social-link{
+  position: absolute;
+  bottom: 0;
+}
+h2{
+  position: absolute;
+  top: 150px;
+}
+p{
+   position: absolute;
+  top: 220px;
+}
+span{
+  color: #d32d03;
+}
+button{
+   position: absolute;
+  bottom: 100px;
+  padding: 15px 25px;
+  border-radius: 30px;
+  color: white;
+  background-color: gray;
+  outline: none;
+  border: none;
+}
+button:hover{
+  background: #ff4321;
+  color: gray;
+}
+
+/*right-content*/
+.right-content{
+  position: relative;
+  width: 50vw;
+  height: 70vh;
+  /*border: 2px solid green;*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.right-content .pngs{
+  position: absolute;
+  height: 400px;
+ transition: transform 2s;
+ transform: translateY(20px);
+  
+}
+.avtar {
+  position: absolute;
+  transform: translateX(-20px);
+  top: 40px;
+  height: 400px;
+  transition: transform 2s;
+
+}
+.pngs:hover{
+  transform: translateY(80px);
+}
+.avtar:hover{
+  transform: translateX(-30px);
+
+}
